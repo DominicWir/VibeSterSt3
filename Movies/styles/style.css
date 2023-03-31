@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: rgb(255, 255, 255); 
+}
+
+.start{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)),url('/Movies/images/mainpage4.jpg');     
+    background-size: 100% 100%;
+}
+
+/* Navbar */
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 450px;
+    padding-top: 5px;
+    padding-bottom: 335px;
+    padding-right: 450px;
+    
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    max-height: 120px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background: #f5f5f52c;
+}
+
+.logo {
+    width: auto;
+    height: 450px;
+    padding-top: 5px;
+    padding-bottom: 335px;
+    padding-right: 450px;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(36, 37, 124, 0.918);
+    padding: 10px;
+    color: #ffffff;
+    border-top: 5px solid #000000cb;
+    border-bottom: 5px solid #000000cb;
+}
+
+.genres{
+    display: flex;
+    padding: 25px 10px;
+    justify-content: center;
+    align-items:flex-start;
+    border-bottom: 5px solid #000000cb;
+    height: 31vw;
+}
+
+a{
+    z-index: 0;
+    color: #ffffff00;
+}
+
+.horror,
+.comedy,
+.action,
+.anime,
+.tvshows{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+    border: 3px solid #000000cb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 220px;
+    height: 320px;
+    background-size: 100% 100%;
+}
+
+.horror:hover,
+.comedy:hover,
+.action:hover,
+.anime:hover,
+.tvshows:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px 0px rgba(248, 0, 0, 0.9);
+}
+
+.horror h3,
+.comedy h3,
+.action h3,
+.anime h3,
+.tvshows h3{
+    text-align: center;
+    padding-top: 120px;
+}
+
+.horror{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/horror/smallhorror/Abandoned.jpg');
+}
+
+.comedy{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/comedy/smallcomedy/mft.jpg');
+}
+
+.action{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/action/smallaction/65.jpg');
+}
+
+.anime{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/anime/animesmall/aot.jpg');
+}
+
+.tvshows{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/tvshows/tvshowssmall/arcane.jpg');
+}
+
+ .horror_sect,
+ .comedy_sect,
+ .action_sect,
+ .anime_sect,
+ .tvshows_sect{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 0 0;
+    color: #ffffff;
+    border-bottom: 3px solid #000000;
+}
+.horror_sect{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/backgrounds/horror.jpg');
+}
+
+.pre-btn,
+.nxt-btn{
+    color: #ffff;
+    background-color: #00000000;
+    border: none;
+    width: 10vw;
+    height: 630px;
+    top: 0;
+    position: absolute;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9; 
+}
+
+
+.pre-btn i,
+.nxt-btn i{
+    opacity: 0.5;
+}
+
+.pre-btn i:hover,
+.nxt-btn i:hover{
+    opacity: 1;
+}
+
+.pre-btn{
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 100%);
+}
+.nxt-btn{
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, rgb(0, 0, 0) 100%);
+}
+
+.container{
+    padding: 20px 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    height: 41vw;
+
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    background-color: #807e7e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px 0px rgba(0, 58, 248, 0.9);
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+.pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+
+.image::after{
+    content: '';
+    background-color: #00000041;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 5px 10px;
+}
+
+
+
+.rating{
+    /* padding-left: 11px; */
+    font-weight: 500;
+    color: rgb(255, 208, 0);
+}
+
+.fa-solid.fa-star.fa-lg{
+    padding-left: 5px;
+}
+
+.card-btn{
+    color: #ffffff;
+    background-color: #b80505cb;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.card-btn:hover{
+    background-color: #700808cb;
+}
+
+.comedy_sect{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(43, 42, 42, 0.527)), url('/Movies/images/backgrounds/comedy.jpg');
+
+}
+
+.action_sect{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(43, 42, 42, 0.247)), url('/Movies/images/backgrounds/action.jpg');
+    background-size: 100% 100%;
+}
+
+.anime_sect{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(43, 42, 42, 0.247)), url('/Movies/images/backgrounds/anime.jpg');
+    background-size: 100%;
+}
+
+.tvshows_sect{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(43, 42, 42, 0.247)), url('/Movies/images/backgrounds/tvshows.jpg');
+    background-size: 100% 100%;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(13, 86, 95);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn:hover{
+    transform: scale(1.1);
+}
+
+.logo {
+    width: auto;
+    height: 450px;
+    padding-top: 5px;
+    padding-bottom: 335px;
+    padding-right: 300px;
+}
+
+footer{
+    border-top-right-radius: 0% !important;
+    border-top-left-radius: 0% !important;
+}

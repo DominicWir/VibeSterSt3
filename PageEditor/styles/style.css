@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(255, 255, 255, 0)), url(/PageEditor/images/board.jpg);
+    background-size: 100%;
+    z-index: -1;
+  }
+  
+  /* Style the header */
+header {
+    background-color: #2b2a2cab;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Style the main content */
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    border-radius: 7px;
+  }
+  
+  section li {
+    margin-bottom: 5px;
+  }
+  
+  /*Dynamic styling*/
+  header, h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Style the box */
+  .box {
+    font-weight: 500;
+    font-size: 15px;
+    border: 3px solid #000000cb;
+    color: #000000;
+    border-radius: 5px;
+    /* padding: 10px;
+    max-width: 550px; */
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+  }
+
+  .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px 0 rgba(0, 0, 0, 0.9);
+  }
+
+  .box .details{
+    background-image: url("/PageEditor/images/shortNote.jpg");
+    background-size: 100%;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .box .roles{
+    background-image: url("/PageEditor/images/longNote.jpg");
+    background-size: 100%;
+    width: 600px;
+    height: 400px;
+  }
+
+  .det_box{
+    padding-top: 50px;
+  }
+
+  .det_box span{
+    font-weight: 800;
+  }
+
+  .face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img{
+    max-height: 350px;
+    max-width: 150px;
+    border-radius: 50px;
+    border: 3px solid #000000cb;
+  }
+
+  .role_box p{
+    font-weight: 800;
+  }
+
+  .items_box{
+    padding: 0px 0px 0px 100px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .items_box .topics{
+    font-weight: 700;
+    display: flex;
+  }
+
+  .box p {
+    margin: 10px 0; 
+    text-align: center; 
+  }
+  
+  .quiz_read,
+  .movies_read,
+  .details_read{
+    font-weight: 600;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .visit{
+    margin-left: 10px;
+    border: 2px solid #000000cb;
+    border-radius: 5px;
+    background-color: rgba(165, 132, 42, 0.562);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .quiz_read:hover,
+  .movies_read:hover,
+  .details_read:hover{
+    color: #15399c;
+  }
+
+  .visit_quiz:hover,
+  .visit_movies:hover,
+  .visit_students:hover{
+    background-color: #15399c;
+    color: #fff;
+  }
+
+  .quiz_read.hide,
+  .movies_read.hide,
+  .details_read.hide{
+    opacity: 0;
+    cursor:default;
+  }
+
+  .visit_quiz,
+  .visit_movies,
+  .visit_students{
+    margin-left: 20px;
+    height: 25px;
+  }
+
+  .fa-solid.fa-caret-down{
+    padding-left: 5px;
+  }
