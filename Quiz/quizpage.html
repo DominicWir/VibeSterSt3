@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="view" content="width=device-width, inital-scale=1.0">
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="/nav-footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <title>Quiz!</title>
+    </head>
+    <body class="bg">
+      <nav>
+        <ul style="display: flex; justify-content: end;margin-bottom: 170px;">
+          <img src="images/newlogo.png" class="logo">
+            <li style="padding-right: 15px;"><a href="/index.html" style="border-radius: 5px;">Home</a></li>
+            <li style="padding-right: 15px;"><a href=" " style="border-radius: 5px;">Gallery</a></li>
+            <li style="padding-right: 15px;"><a href=" " style="border-radius: 5px;">Shop</a></li>
+            <li style="padding-right: 15px;"><a href=" " style="border-radius: 5px;">Quiz</a></li>
+            <li style="padding-right: 15px;"><a href=" " style="border-radius: 5px;">Comments</a></li>
+            <li style="padding-right: 15px;"><a href=" " style="border-radius: 5px;">Site Map</a></li>
+            <li style="padding-right: 15px;"><a href="/StudentDetails/aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="image_box">
+    </div>
+      <!-- Start Button -->
+       <div class="start_btn"><button>Start Quiz</button></div> 
+       <div class="info_box">
+        <div class="info_title">
+          <span>Some Rules</span>
+        </div>
+        <div class="info_list">
+          <div class="info">You will have only <span>15 seconds</span> for each question.</div>
+          <div class="info">Once your time is up, your response will be submitted.</div>
+          <div class="info">You cannot leave the quiz once it has started.</div>
+        </div>
+        <div class="buttons">
+          <button class="quit">Exit Quiz</button>
+          <button class="restart">Continue</button>
+        </div>
+       </div>
+
+       <!-- Quiz body -->
+       <div class="quiz_box">
+        <header>
+          <div class="title">Quiz application</div>
+          <div class="timer">
+            <div class="time_text">Time Left</div>
+            <div class="timer_sec">15</div>
+            <div class="time_line"></div>
+          </div>
+        </header>
+        <section>
+          <div class="que_text">
+          </div>
+          <div class="option_list">
+          </div>
+        </section>
+        
+        <!-- Quiz Box Footer-->
+        <footer>
+          <div class="total_que">
+          </div>
+          <button class="next_btn">Next</button>
+        </footer>
+       </div>
+
+       <!-- Result Box -->
+       <div class="result_box">
+        <div class="icon">
+          <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="time_taken"></div>
+        <div class="score_text"></div>
+        <div class="grade"></div>
+        <div class="buttons">
+          <button class="restart">Replay Quiz</button>
+          <button class="quit">Quit Quiz</button>
+        </div>
+       </div>
+       <script src="scripts/quizfunctions.js"></script>
+       <script src="scripts/questions.js"></script>
+    </body>
+    <footer style="padding-top: 0px;">
+      <div class="footer-container" style="background-color: rgb(6, 40, 61);padding-top: 10px; width: 100% !important;">
+          <h3>VibeSter</h3>
+          <p>
+              Thanks for visiting our entertainment website! We hope you had a great time discover our Sporting Events, Movies, TV shows, Travelings and Games. If you have any questions or feedback, please feel free to contact us.
+          </p>
+          <ul class="socials ">
+              <li><a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com "><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://mobile.twitter.com "><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://chat.whatsapp.com "><i class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom" style="background-color: #05172b;width: 100%;">
+          <p>Copyright&copy; 2023 VibeSter. designed by <a href="/PageEditor/dominicpage.html" style="color: rgb(69, 108, 236);">@Dominic Wirasinha</a></p>
+
+      </div>
+  </footer>
+</html>
