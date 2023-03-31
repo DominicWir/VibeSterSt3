@@ -8,33 +8,33 @@
 }
 
 .bg{
-    background-image: url('/Quiz/images/mainpage4.jpg'); 
+    background-image: url('/images/mainpage4.jpg'); 
     background-size: 100% 100%;
     transition: all 0.5s ease;
     height: 100vh;
 }
 
 .bg.movies{
-    background-image: url('/Quiz/images/mainpage4.jpg'); 
+    background-image: url('/images/mainpage4.jpg'); 
     background-size: 100% 100%;
     
     transition: all 0.5s ease;
 }
 
 .bg.games{
-    background-image: url('/Quiz/images/mainpage1.jpg'); 
+    background-image: url('/images/mainpage1.jpg'); 
     background-size: 100%;
     transition: all 0.5s ease;
 }
 
 .bg.sports{
-    background-image: url('/Quiz/images/mainpage2.jpg'); 
+    background-image: url('/images/mainpage2.jpg'); 
     background-size: 100%;
     transition: all 0.5s ease;
 }
 
 .bg.travel{
-    background-image: url('/Quiz/images/mainpage3.jpg'); 
+    background-image: url('/images/mainpage3.jpg'); 
     background-size: 100%;
     transition: all 0.5s ease;
 }
